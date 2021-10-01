@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Anke Pfeiffer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Anke Pfeiffer</h1>
+    <header class="page-header">
+      <h1>Anke Pfeiffer</h1>
+    </header>
 
     <div class="grid">
-      <div class="header">
-        <h3>About Previous Next Contact</h3>
+      <div class="head-nav">
+        <div class="headergrid">
+          <a href="#About"><h3>About Me</h3></a>
+          <a href="#Next"><h3>Next</h3></a>
+          <a href="#Previous"><h3>Previous</h3></a>
+          <a href="#Contact"><h3>Contact</h3></a>
+        </div>
       </div>
 
       <img class="portrait" src="Portrait.png" alt="" />
       <img class="notebook" src="zugeschnitten dunkler 4.png" alt="" />
 
-      <article class="about-me">
+      <article class="about-me" id="About">
         <div class="cardgrid">
           <h2>About me</h2>
         </div>
       </article>
 
-      <article class="previous">
+      <article class="previous" , id="Previous">
         <div class="cardgrid">
           <h2>Previous</h2>
           <ul>
@@ -37,7 +50,7 @@
         </div>
       </article>
 
-      <article class="next">
+      <article class="next" id="Next">
         <div class="cardgrid">
           <h2>Next</h2>
           Currently I am learning to become a Web Developer at the neue fische
@@ -45,10 +58,21 @@
         </div>
       </article>
 
-      <article class="contact">
+      <article class="contact" id="Contact">
         <div class="cardgrid">
           <h2>Contact</h2>
-          LinkedIn GitHub
+          <div class="links">
+            <a href="https://www.linkedin.com/in/anke-pfeiffer">
+              <img src="LinkedIn-black."
+              width="30px"
+              />
+            <a href="https://github.com/AnkePfei2fer">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                width="30px"
+              />
+            </a>
+          </div>
         </div>
       </article>
     </div>
