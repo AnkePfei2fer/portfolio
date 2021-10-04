@@ -1,28 +1,32 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color:#C7C4C5;
     color: #0C0C0D;
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .grid {  
     display: grid;
     gap: 2.5rem;
     grid-template-rows: 0.1fr 0.1fr auto auto 0.5fr 0.1fr;
-    grid-template-columns: 0.5fr 5fr 5fr 0.5fr;
+    grid-template-columns: 1f 1fr;
+    align-items: start;
 }
 
 .banner{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 5; 
+    grid-column-end: 3; 
     /* background-color: #AA8E91; */
     background: linear-gradient(0.25turn, #876767, #C2AAAF);
     border-radius: 5px;
@@ -31,8 +35,8 @@ body {
 .name{
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3; 
+    grid-column-start: 1;
+    grid-column-end: 2; 
     text-align: center;
     font-size: 4rem;
 }
@@ -40,8 +44,8 @@ body {
 .head-nav {  
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4; 
+    grid-column-start: 2;
+    grid-column-end: 3; 
     font-size: 1.25rem;
 }
 
@@ -53,6 +57,7 @@ body {
 
 a:link {
     color: #0C0C0D;
+    text-decoration: none;
 }
 a:visited {
     color: #0C0C0D;
@@ -67,8 +72,8 @@ a:active {
 .portrait {  
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start:3;
-    grid-column-end: 4; 
+    grid-column-start:2;
+    grid-column-end: 3; 
     width: 100%;
     border-radius: 50px;
     box-shadow: 10px 10px 5px #848182;
@@ -77,8 +82,8 @@ a:active {
 .notebook {  
     grid-row-start: 4;
     grid-row-end: 5;
-    grid-column-start:2;
-    grid-column-end: 3; 
+    grid-column-start:1;
+    grid-column-end: 2; 
     width: 100%;
     border-radius: 50px;
     box-shadow: 10px 10px 5px #848182;
@@ -87,8 +92,8 @@ a:active {
 .about-me {
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3; 
+    grid-column-start: 1;
+    grid-column-end: 2; 
     font-size: 1.2rem;
     border: 0.3rem dotted #222226;
     padding: 2.5rem;
@@ -99,8 +104,8 @@ a:active {
 .next {
     grid-row-start: 4;
     grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4; 
+    grid-column-start: 2;
+    grid-column-end: 3; 
     font-size: 1.2rem;
     border: 0.3rem dotted #222226;
     padding: 2.5rem;
@@ -111,8 +116,8 @@ a:active {
 .previous {
     grid-row-start: 5;
     grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4; 
+    grid-column-start: 1;
+    grid-column-end: 3; 
     font-size: 1.2rem;
     border: 0.3rem dotted #222226;
     padding: 2.5rem;
@@ -123,8 +128,8 @@ a:active {
 .contact {
     grid-row-start: 7;
     grid-row-end: 8;
-    grid-column-start: 2;
-    grid-column-end: 4; 
+    grid-column-start: 1;
+    grid-column-end: 3; 
     font-size: 1.2rem;
     padding: 0.5rem;
     text-align: center;
