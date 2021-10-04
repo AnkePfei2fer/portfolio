@@ -8,7 +8,7 @@ body {
     background-color:#C7C4C5;
     color: #0C0C0D;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 .grid {  
@@ -42,6 +42,7 @@ body {
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4; 
+    font-size: 1.25rem;
 }
 
 .headergrid {  
@@ -88,27 +89,9 @@ a:active {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3; 
-    font-size: 1.2em;
-    /* width: 400px;
-    height: 400px; */
-    border: 0.2em dotted #222226;
-    padding: 2rem;
-    /* margin: 2em; */
-    border-radius: 50px;
-    text-align: center;
-}
-
-.previous {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4; 
-    font-size: 1.2em;
-    /* width: 400px;
-    height: 400px; */
-    border: 0.2em dotted #222226;
-    padding: 2rem;
-    /* margin: 2em; */
+    font-size: 1.2rem;
+    border: 0.3rem dotted #222226;
+    padding: 2.5rem;
     border-radius: 50px;
     text-align: center;
 }
@@ -118,12 +101,21 @@ a:active {
     grid-row-end: 5;
     grid-column-start: 3;
     grid-column-end: 4; 
-    font-size: 1.2em;
-    /* width: 400px;
-    height: 400px; */
-    border: 0.2em dotted #222226;
-    padding: 2rem;
-    /* margin: 2em; */
+    font-size: 1.2rem;
+    border: 0.3rem dotted #222226;
+    padding: 2.5rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.previous {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    font-size: 1.2rem;
+    border: 0.3rem dotted #222226;
+    padding: 2.5rem;
     border-radius: 50px;
     text-align: center;
 }
@@ -133,13 +125,8 @@ a:active {
     grid-row-end: 8;
     grid-column-start: 2;
     grid-column-end: 4; 
-    font-size: 1.2em;
-    /* width: 400px;
-    height: 400px; */
-    /* border: 0.2em dotted #222226; */
-    padding: 1rem;
-    /* margin: 2em; */
-    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
@@ -148,4 +135,8 @@ a:active {
 }
 .links:active {
     filter: invert(44%) sepia(7%) saturate(1348%) hue-rotate(314deg) brightness(92%) contrast(80%);
+}
+
+footer{
+    text-align: right;
 }
